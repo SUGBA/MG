@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Any\**" />
+    <EmbeddedResource Remove="Any\**" />
+    <None Remove="Any\**" />
+    <Page Remove="Any\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ImageFlags\DefaultFlag.png" />
+    <None Remove="ImageFlags\Америка.png" />
+    <None Remove="ImageFlags\Германия.png" />
+    <None Remove="ImageFlags\Казахстан.png" />
+    <None Remove="ImageFlags\Канада.png" />
+    <None Remove="ImageFlags\Китай.png" />
+    <None Remove="ImageFlags\КНДР.png" />
+    <None Remove="ImageFlags\Мексика.png" />
+    <None Remove="ImageFlags\Нигерия.png" />
+    <None Remove="ImageFlags\Россия.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ImageFlags\DefaultFlag.png" />
+    <Resource Include="ImageFlags\Америка.png" />
+    <Resource Include="ImageFlags\Германия.png" />
+    <Resource Include="ImageFlags\Казахстан.png" />
+    <Resource Include="ImageFlags\Канада.png" />
+    <Resource Include="ImageFlags\Китай.png" />
+    <Resource Include="ImageFlags\КНДР.png" />
+    <Resource Include="ImageFlags\Мексика.png" />
+    <Resource Include="ImageFlags\Нигерия.png" />
+    <Resource Include="ImageFlags\Россия.png" />
+  </ItemGroup>
+
+</Project>
